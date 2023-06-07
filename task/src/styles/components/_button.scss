@@ -1,0 +1,41 @@
+.button {
+  @include text("Manrope", 600, 14px, 19px, $color-white);
+  background-color: $font-color-main;
+  border: none;
+  cursor: pointer;
+  padding: 18px 22px;
+  border-radius: 15px;
+  transition: all 200ms ease-in-out;
+  position: relative;
+  text-align: left;
+
+  @media screen and (--large-viewport) {
+    padding: 18px 46px;
+    font-size: 15px;
+  }
+
+  &_primary {
+    background-color: $color-button;
+  }
+
+  &__secondary {
+    background-color: $background-color;
+    color: $font-color-grey;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 45%;
+    left: 84%;
+    bottom: 0;
+    right: 0;
+
+    &_primary {
+      color: $color-white;
+    }
+
+    &_secondary {
+      color: $font-color-grey;
+    }
+  }
+}

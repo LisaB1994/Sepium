@@ -1,0 +1,108 @@
+.content {
+  background-color: $background-color;
+  @include pad(80px, 80px);
+  height: 100%;
+
+  @media screen and (--large-viewport) {
+    @include pad(40px, 59px);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    padding-bottom: 27.5px;
+    align-items: center;
+
+    @media screen and (--large-viewport) {
+      padding-bottom: 37.5px;
+      justify-content: space-between;
+    }
+  }
+
+  &__discription {
+    @include text("Manrope", 600, 14px, 24px, $font-color-grey);
+    font-style: normal;
+    margin: 0;
+    max-width: 261px;
+
+    @media screen and (--large-viewport) {
+      font-size: 18px;
+      max-width: 440px;
+    }
+  }
+
+  &__title {
+    @include text("PT Sans Caption", 400, 58px, 64px, $font-color-main);
+    font-style: normal;
+    letter-spacing: -0.03em;
+    margin: 0;
+    margin-left: 161px;
+    max-width: 687px;
+
+    @media screen and (--large-viewport) {
+      font-size: 66px;
+      line-height: 68px;
+    }
+  }
+
+  &__main {
+    position: relative;
+    padding-top: 27.5px;
+  }
+
+  &__button-arrow {
+    width: 38px;
+    height: 38px;
+    background-color: $color-white;
+    border: 9px solid $background-color;
+    border-radius: 100%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 44%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @media screen and (--large-viewport) {
+      top: 48%;
+      width: 50px;
+      height: 50px;
+      border: 14px solid $background-color;
+    }
+  }
+
+  &__button-left {
+    left: -2%;
+
+    @media screen and (--large-viewport) {
+      left: -1%;
+    }
+  }
+
+  &__button-right {
+    left: 98%;
+  }
+
+  &__arrow {
+    color: $arrow;
+    fill: $color-white;
+
+    &_left {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__wrapper-main {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

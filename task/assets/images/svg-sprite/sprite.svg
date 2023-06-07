@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="arrow">
+<path d="M7 3L2 8L7 13" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"/>
+</symbol>
+<symbol id="arrow-small">
+<path d="M5 4.5L0.5 8.83013L0.499999 0.169873L5 4.5Z" fill="currentColor"/>
+</symbol>
+</defs>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
